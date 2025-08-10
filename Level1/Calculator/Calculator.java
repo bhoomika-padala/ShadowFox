@@ -1,17 +1,17 @@
-package pro;
+// package pro;
 import java.util.*;
 public class Calculator {
 	//methods used inside arithmetic to perform basic operations (+,-,/,*,%)
-	public static double addition(double a, double b) {
+	public static double Addition(double a, double b) {
 		return a+b;
 	}
-	public static double subtraction(double a, double b) {
+	public static double Subtraction(double a, double b) {
 		return a-b;
 	}
 	public static double Multiply(double a, double b) {
 		return a*b;
 	}
-	public static double division(double a, double b) {
+	public static double Division(double a, double b) {
 		return a/b;
 	}
 	public static double Modulo(double a, double b) {
@@ -92,7 +92,7 @@ public class Calculator {
 		break;
 		case 2:
 			try{
-			System.out.println("Enter number to be Squared:");
+			System.out.println("Enter number find Squareroot of:");
 			double num1=sc.nextDouble();
 			result=SquareRoot(num1);
 			System.out.println("result: "+result);
@@ -159,46 +159,80 @@ public static void arithmetic(Scanner sc) {
 					sc.nextLine();
 					continue;
 				}
-			if(choice!=6) {
-				System.out.println("Enter the numbers:");
-			try {
 				
+		switch(choice) {
+		case 1: System.out.println("Enter the numbers:");
+			try {	
 			 num1=sc.nextDouble();
 			 num2=sc.nextDouble();
+			 result=Addition(num1,num2);
+			 System.out.println("result: "+result);
 			}catch(InputMismatchException e) {
 				System.out.println("Invalid input! please enter a numeric value.");
 				sc.nextLine();
 				continue;
 			}
-			}	
-		switch(choice) {
-		case 1: result=addition(num1,num2);
-		System.out.println("result: "+result);
 		break;
-		case 2: result=subtraction(num1,num2);
-		System.out.println("result: "+result);
+		case 2:System.out.println("Enter the numbers:");
+			try {	
+			 num1=sc.nextDouble();
+			 num2=sc.nextDouble();
+			 result=Subtraction(num1,num2);
+			 System.out.println("result: "+result);
+			}catch(InputMismatchException e) {
+				System.out.println("Invalid input! please enter a numeric value.");
+				sc.nextLine();
+				continue;
+			}
 		break;
-		case 3: result=Multiply(num1,num2);
-		System.out.println("result: "+result);
+		case 3: System.out.println("Enter the numbers:");
+			try {	
+			 num1=sc.nextDouble();
+			 num2=sc.nextDouble();
+			 result=Multiply(num1,num2);
+			 System.out.println("result: "+result);
+			}catch(InputMismatchException e) {
+				System.out.println("Invalid input! please enter a numeric value.");
+				sc.nextLine();
+				continue;
+			}
 		break;
-		case 4:
-			if(num2==0) {
+		case 4:System.out.println("Enter the numbers:");
+			try {	
+			 num1=sc.nextDouble();
+			 num2=sc.nextDouble();
+			 if(num2==0) {
 				System.out.println("number cannot be divided by zero");
 			}
 			else{
-				result=division(num1,num2);
+				result=Division(num1,num2);
 				System.out.println("result: "+result);
 
 			}
+			}catch(InputMismatchException e) {
+				System.out.println("Invalid input! please enter a numeric value.");
+				sc.nextLine();
+				continue;
+			}
+			
 		break;
-		case 5:if(num2==0) {
-			System.out.println("number cannot be divided by zero");
-		}
-		else{
-			result=Modulo(num1,num2);
-			System.out.println("result: "+result);
+		case 5:System.out.println("Enter the numbers:");
+			try {	
+			 num1=sc.nextDouble();
+			 num2=sc.nextDouble();
+			 if(num2==0) {
+				System.out.println("number cannot be divided by zero");
+			}
+			else{
+				result=Modulo(num1,num2);
+				System.out.println("result: "+result);
 
-		}
+			}
+			}catch(InputMismatchException e) {
+				System.out.println("Invalid input! please enter a numeric value.");
+				sc.nextLine();
+				continue;
+			}
 		break;
 		case 6: System.out.println("---returning to main menu---");
 		break;
