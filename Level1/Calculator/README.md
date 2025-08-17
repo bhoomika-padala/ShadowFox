@@ -13,8 +13,7 @@ This Java console application provides a multifunctional calculator capable of p
 The application uses a menu-driven interface and validates user inputs for robustness.
 
 ## Features
-
-- Modular code with separate methods for each operation  
+  
 - Input validation with exceptions handling wrong or invalid input  
 - Proper handling of edge cases (e.g., division by zero, roots of negative numbers)  
 - Results formatted to 2 decimal places where applicable  
