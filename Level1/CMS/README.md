@@ -1,6 +1,6 @@
 # 📇 Contact Management System
 
-A simple *Command-Line Interface (CLI)* based *Contact Management System* built in *Java* as part of *Shadowfox Internship – Level 1 (Beginner Task 2)*.
+A simple *Command-Line Interface (CLI)* based *Contact Management System* built in *Java* as part of *Shadowfox Internship – Level 1*.
 
 This project demonstrates *CRUD operations* (Create, Read, Update, Delete) using an ArrayList to store and manage contacts.
 
@@ -14,21 +14,6 @@ This project demonstrates *CRUD operations* (Create, Read, Update, Delete) using
 * ✏ *Update Contact* – Modify existing contact details
 * ❌ *Delete Contact* – Remove a contact using their phone number
 * 🛑 *Duplicate Prevention* – Ensures no two contacts have the same phone number
-
----
-
-## 📂 Project Structure
-
-
-Level1/
-├── Calculator/   # Task 1 - Calculator
-│   ├── Calculator.java
-│   └── README.md
-│
-├── CMS/          # Task 2 - Contact Management System
-│   ├── ContactManagementSystem.java
-│   └── README.md
-
 
 ---
 
